@@ -27,9 +27,9 @@ $(function(){
 	
 	function addItemsToPhoneBook(){
 		var $contactLine = $contactTemplate.html().replace('{{image}}', $image.val())
-												  .replace('{{newName}}', $newName.val())
-												  .replace('{{newSurName}}', $newSurName.val())
-												  .replace('{{newPhoneNumber}}', $newPhoneNumber.val());
+							  .replace('{{newName}}', $newName.val())
+							  .replace('{{newSurName}}', $newSurName.val())
+							  .replace('{{newPhoneNumber}}', $newPhoneNumber.val());
 		$contact.append($contactLine);
 	}
 
