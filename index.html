@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Phone book</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<h3>Phone book</h3>
+
+	<div>
+		<table id="contact">
+			<thead>
+				<!-- <th>Picture</th> -->
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Phone Number</th>
+				<th><input type="button" id = "emptyTheWholeBook" value="Empty All"></th>
+			</thead>
+
+		</table>
+	</div>
+
+	<div>
+		<table id='newItem'>
+			<tr>
+				<th>New Item</th>
+			</tr>
+			<!-- <tr>
+				<td><input type="file"></td>
+			</tr> -->
+			<tr>
+				<td><input type="text" id="newName" placeholder="Name"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="newSurName" placeholder="Surname"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="newPhoneNumber" placeholder="(123) 456-78-90"></td>
+			</tr>
+			<tr>
+				<td><input type = "submit" id = "submit" value = "submit" disabled></td>
+			</tr>
+		</table>
+	</div>	
+
+	<script src='app.js'></script>
+	<script type='text/apptemplate' id='contactTemplate'>
+		<tr>
+			<!-- <td>{{image}}</td> -->
+			<td>{{newName}}</td>
+			<td>{{newSurName}}</td>
+			<td>{{newPhoneNumber}}</td>
+			<td><button class='delete'>DELETE</button></td>
+		</tr>
+	</script>
+</body>
+</html>
